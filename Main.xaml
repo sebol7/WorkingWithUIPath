@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1159,994</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1159,1108</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="82">
@@ -111,10 +111,11 @@
       <AssemblyReference>System.Linq.Expressions</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="655,929" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="655,1043" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="strVariable" />
       <Variable x:TypeArguments="x:String" Name="strVariable2" />
+      <Variable x:TypeArguments="x:String" Name="strVariable3" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -160,12 +161,20 @@
         <InArgument x:TypeArguments="x:String">Test</InArgument>
       </Assign.Value>
     </Assign>
-    <Assign sap:VirtualizedContainerService.HintSize="593,105" sap2010:WorkflowViewState.IdRef="Assign_2">
+    <Assign sap:VirtualizedContainerService.HintSize="593,114" sap2010:WorkflowViewState.IdRef="Assign_2">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[strVariable2]</OutArgument>
       </Assign.To>
       <Assign.Value>
         <InArgument x:TypeArguments="x:String">Test2</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="593,105" sap2010:WorkflowViewState.IdRef="Assign_3">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[strVariable3]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">Test3</InArgument>
       </Assign.Value>
     </Assign>
   </Sequence>
